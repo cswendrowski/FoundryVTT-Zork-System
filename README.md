@@ -1,6 +1,9 @@
-# ptu System
+# Zork System
 
-This system is a ptu system that you can use as a starting point for building your own custom systems. It's similar to Simple World-building, but has examples of creating attributes in code rather than dynamically through the UI.
+A Foundry wrapper of the Public Domain Zork 1 (https://github.com/devshane/zork). Powered by the Andy Hattemer's API: https://andyhattemer.com/zork-web-api-with-spaces.html.
+
+
+This was done as a joke, but it's fully playable. Save state is cookie based.
 
 ## Usage
 
