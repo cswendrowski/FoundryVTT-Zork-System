@@ -1,6 +1,11 @@
+import { DoomItem } from "./item/doom.js";
+import { DoomItemSheet } from "./item/doom-sheet.js";
+
 Hooks.once('init', async function() {
 
-
+  game.zork = {
+    DoomItem
+  };
 
   /**
    * Set an initiative formula for the system
@@ -10,6 +15,9 @@ Hooks.once('init', async function() {
     formula: "1d20",
     decimals: 2
   };
+
+  Items.unregisterSheet("core", ItemSheet);
+  Items.registerSheet("zork", DoomItemSheet, { makeDefault: true });
 
   Hooks.on("chatMessage", (chatlog, content) => {
     if (content.startsWith("&gt;") || content == undefined || content == "undefined") return;

@@ -2,7 +2,7 @@
   "name": "zork",
   "title": "Zork",
   "description": "A Foundry wrapper of the Public Domain Zork 1 (https://github.com/devshane/zork). Powered by the Andy Hattemer's API: https://andyhattemer.com/zork-web-api-with-spaces.html",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "minimumCoreVersion": "0.6.2",
   "compatibleCoreVersion": "0.6.4",
   "templateVersion": 2,
@@ -11,7 +11,6 @@
   "styles": [
     "css/zork.css"
   ],
-  "scripts": [],
   "packs": [],
   "languages": [
     {
@@ -19,6 +18,15 @@
       "name": "English",
       "path": "lang/en.json"
     }
+  ],
+  "scripts": [
+    "lib/js-dos-api.js",
+    "lib/dosbox.js",
+    "lib/wdosbox.js",
+    "lib/wdosbox.wasm.js",
+    "lib/wdosbox-emterp.js",
+    "lib/wdosbox-emterp.wasm.js",
+    "lib/js-dos.js"
   ],
   "gridDistance": 5,
   "gridUnits": "ft",

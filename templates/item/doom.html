@@ -1,0 +1,17 @@
+
+<form class="{{cssClass}}" autocomplete="off">
+<h3><input name="name" type="text" value="{{item.name}}" placeholder="digger"/></h3>
+<h4><input name="data.command" type="text" value="{{data.command}}" placeholder="/DIGGER.COM"/></h4>
+<canvas id="jsdos"></canvas>
+
+<button onclick="ci.fullscreen()">Fullscreen</button>
+<button id="start">Start</button>
+<button onclick="ci.exit()">Exit</button>
+
+<style type="text/css">
+    canvas {
+        width: 640px; 
+        height: 400px;
+    }
+  </style>
+</form>

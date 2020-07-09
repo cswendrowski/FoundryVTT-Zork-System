@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v2
 
     # create a zip file with all files required by the module to add to the release
-    - run: zip -r ./system.zip system.json template.json lang/ module/ css/
+    - run: zip -r ./system.zip system.json template.json lang/ module/ css/ lib/ templates/
 
     # Get the version from 'module.json'
     - name: Get Version
