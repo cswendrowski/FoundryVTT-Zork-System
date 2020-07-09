@@ -2,7 +2,7 @@
   "name": "zork",
   "title": "Zork",
   "description": "A Foundry wrapper of the Public Domain Zork 1 (https://github.com/devshane/zork). Powered by the Andy Hattemer's API: https://andyhattemer.com/zork-web-api-with-spaces.html",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "minimumCoreVersion": "0.6.2",
   "compatibleCoreVersion": "0.6.4",
   "templateVersion": 2,

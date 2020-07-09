@@ -26,7 +26,6 @@ body,input,pre {
 }
 body {
  background:#000;
- font-size:24px;
  margin:none;
  padding:none
 }
@@ -40,7 +39,6 @@ p {
 }
 a,
 a:visited {
- border-bottom:.2rem solid #14fdce;
  color:#14fdce;
  text-decoration:none
 }
@@ -116,7 +114,7 @@ input[type=submit] {
   opacity:1
  }
 }
-.scanlines {
+.game {
  background:-webkit-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0) 50%,rgba(0,0,0,.2) 70%,rgba(0,0,0,.6));
  background:linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,0) 50%,rgba(0,0,0,.2) 70%,rgba(0,0,0,.6));
  background-size:100% .3rem;

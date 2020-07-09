@@ -11,16 +11,7 @@ Hooks.once('init', async function() {
     decimals: 2
   };
 
-
-  Hooks.once("ready", async function() {
-
-  });
-
-  Hooks.on("preCreateChatMessage", (context, info, id) => {
-    console.log(context);
-    var content = context.content;
-    console.log(content);
-
+  Hooks.on("chatMessage", (chatlog, content) => {
     if (content.startsWith("&gt;") || content == undefined || content == "undefined") return;
 
     var uri = encodeURIComponent(content);
@@ -30,7 +21,6 @@ Hooks.once('init', async function() {
   });
 
   function handleZorkResponse(response) {
-    console.log(response);
     ChatMessage.create({
       content: response.msg
     });
